@@ -9,7 +9,7 @@ export default function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     return (
-        <SafeAreaView style={{ flex: 1, backgroundColor: '#444', justifyContent: 'center', alignItems: 'center' }}>
+        <SafeAreaView style={{ flex: 1, backgroundColor: '#000', justifyContent: 'center', alignItems: 'center' }}>
             <View style={styles.main}>
                 <Text style={styles.title}>Olá, sobre o que gostaria de falar?</Text>
                 <Text style={styles.subtitle}>Por favor, indentifique-se</Text>
