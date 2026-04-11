@@ -25,6 +25,6 @@ const style = StyleSheet.create({
     title: {
         fontSize: (wi < 700) ? (wi / 10) : (wi / 25),
         color: '#ffffff',
-        fontFamily: 'Magneto',
+        fontFamily: 'Arial',
     }
 })
