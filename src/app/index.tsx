@@ -14,7 +14,7 @@ export default function index() {
 
     type Screen = "home" | "imc" | "contact" | "toDo";
 
-    const [activeScreen, setActiveScreen] = useState<Screen>("toDo");
+    const [activeScreen, setActiveScreen] = useState<Screen>("home");
 
     const [showProjects, setShowProjects] = useState(false);
     const [showSideMenu, setShowSideMenu] = useState(true);
