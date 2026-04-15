@@ -12,7 +12,7 @@ const scale = height / 20;
 
 export default function index() {
 
-    type Screen = "home" | "imc" | "contact" | "toDo";
+    type Screen = "home" | "imc" | "contact" | "toDo" | "maps";
 
     const [activeScreen, setActiveScreen] = useState<Screen>("home");
 
@@ -58,12 +58,16 @@ export default function index() {
                     {showProjects && (
                         <View style={{ gap: 20 }}>
                             <Pressable style={[style.menuItem, { marginLeft: 50 }]} onPress={() => { handleChangeScreen('imc') }}>
-                                <Image source={require('@/assets/images/calculator.svg')} resizeMode="center" style={style.menuIcon}></Image>
+                                <Image source={require('@/assets/images/calculator.svg')} resizeMode="center" style={style.menuIcon}/>
                                 <Text style={style.menuFont} selectable={false}>IMC</Text>
                             </Pressable>
                             <Pressable style={[style.menuItem, { marginLeft: 50 }]} onPress={() => { handleChangeScreen('toDo') }}>
-                                <Image source={require('@/assets/images/toDo.svg')} resizeMode="center" style={style.menuIcon}></Image>
+                                <Image source={require('@/assets/images/toDo.svg')} resizeMode="center" style={style.menuIcon}/>
                                 <Text style={style.menuFont} selectable={false}>Lista de tarefas</Text>
+                            </Pressable>
+                            <Pressable style={[style.menuItem, { marginLeft: 50 }]} onPress={() => { handleChangeScreen('maps') }}>
+                                <Image source={require('@/assets/images/map.svg')} resizeMode="center" style={style.menuIcon}/>
+                                <Text style={style.menuFont} selectable={false}>Converter medidas</Text>
                             </Pressable>
                         </View>
                     )}
